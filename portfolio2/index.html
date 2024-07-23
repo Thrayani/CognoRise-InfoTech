@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b455dbbc06.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="file.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="headertext">
+                <p>SOFTWARE DEVELOPER</p>
+                <h1>Hi, I'm <span>Ravi Thrayani</span> <br>From Hyderabad</h1>
+            </div>
+        </div>
+
+    </div>
+<!-- -------------About-------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="new.jpg" alt="" class="pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I'm a Skilled Java Programmer with Problem - Solving Expertise, Proficent in Python Programming. Passionate About Sustainable Development.Develop Projects that Optimize Company Performance . Enthusiastic of  Artificial Intelligence and Machine Learning(AI & ML).
+                        Seek to Contribute in Impactful Projects. <br>
+                        <br> Continuously Aquire Knowledge About New Technologies . Loves in Exploring Different Fields Of Tech.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Web Developer</span><br>Frontend Developer</li>
+                                <li><span>Python Programming</span><br>Python Programming</li>
+                                <li><span>Java Programming</span><br>DSA</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.Tech</span><br>in Artificial Intelligence and Data Science (AI&DS)<br> From St.Martin's Engineering College <br>2023 - 2027</li>
+                                <li><span>Intermediate</span><br>in MPC <br>From Sri Chaitanya Jr. College <br>2021-2023</li>
+                                <li><span>SSC</span><br>MAY 2021</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>CodeSoft Virtual InternShip</span><br>Machine Learning</li>
+                                <li><span>CipherBites Technologies Virtual InternShip</span><br>Web Development</li>
+                                <li><span>NIL TECH-EDU InternShip</span><br>Web Development</li>
+
+                            </ul>
+                        </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+    </div>
+    <!-- ------------SERVICES -->
+     <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Designs The Frontend Part of the Websites using: <br> 1.HTML <br> 2.CSS <br>3.Java Script(Js)</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Programming</h2>
+                    <p>1.Profecinet in Python Programming. <br> 2.Problem-Solving Using Python  <br>3.Machine Learning And Deep Learning Models <br>
+                    4.AI Models</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Programming</h2>
+                    <p>1.Skilled in Java PRogramming <br> 2.Data Structures And Algorithms <br></p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+
+        </div>
+     </div>
+     <!-- -----------Contact -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>ravithrayanikubbaji@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>1234567890</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.X.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Thrayani"><i class="fa-brands fa-github"></i></a>
+
+
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+            
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+      </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links"); 
+        var tabcontents = document.getElementsByClassName("tab-contents"); 
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
